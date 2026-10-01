@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     .container{
+
+      display:grid;
+      grid-template-rows: 1fr 3fr 1fr;
+
+     }
+
+     .header{
+
+      background-color: blue;
+      padding:5px;
+      display: flex;
+justify-content: center;
+align-items: center;
+     }
+
+     .middle{
+      display:grid;
+      grid-template-columns: 2fr 1fr;
+       padding-left:80px;
+      padding-right:80px;
+      padding-top:2px;
+     gap:2px;
+     }
+     .main{
+        
+      background-color: blueviolet;
+display: flex;
+justify-content: center;
+align-items: center;
+     }
+
+     .side{
+
+      background-color: aqua;
+  display: flex;
+justify-content: center;
+align-items: center;
+     }
+     .last{
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top:5px;
+      height: 50px;
+      gap:2px;
+ 
+     }
+     .twin{
+
+      background-color: orangered;display: flex;
+justify-content: center;
+align-items: center;
+     }
+
+     .footer{
+     margin-top:5px;
+      background-color: blue;
+      padding:5px;
+      display: flex;
+justify-content: center;
+align-items: center;
+     }
+    </style>
+    <body>
+  
+<div class = "container">
+
+  <div class = "header">.header</div><!--header-->
+
+  <div class = "middle">  <!--middle-->
+    <div class = "main">.main-content</div>
+    <div class = "side">.sidebar</div>
+  </div>
+
+  <div class = "last">
+
+    <div class = "twin">.twin</div>
+    <div class = "twin">.twin</div>
+  </div>
+
+  <div class = "footer">.footer</div>
+
+</div>
+
+    </body>
+  </head>
+</html>
