@@ -1,0 +1,33 @@
+<input type = "text" class = "search">
+
+<div class = "container">
+
+  <h1>Apple</h1>
+  <h1>Banana</h1>
+  <h1>Orange</h1>
+  <h1>Grapes</h1>
+  <h1>Mango</h1>
+</div>
+
+<script>
+
+  let input = document.querySelector(".search");
+  let container = document.querySelector(".container");
+
+  let h1List = container.querySelectorAll("h1");
+
+  input.addEventListener("keyup", function(){
+
+    let enteredvalue = event.target.value.toUpperCase();
+
+    for(i=0;i<h1List.length;i++){
+
+      if(h1List[i].textContent.toUpperCase().indexOf(enteredvalue)<0){
+      h1List[i].style.display = "none"
+
+      }else{
+        h1List[i].style.display = "block";
+      }
+    }
+  })
+</script>

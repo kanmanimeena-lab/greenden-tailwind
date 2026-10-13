@@ -1,0 +1,38 @@
+<input type = "text" class = "input">
+
+<div class = "container">
+
+  <p>HTML</p>
+  <p>CSS</p>
+  <p>Javascript</p>
+  <p>React</p>
+  <p>Node.js</p>
+  <p>Express</p>
+</div>
+
+<script>
+let input = document.querySelector(".input");
+
+let container = document.querySelector(".container");
+
+let pList = container.querySelectorAll("p");
+
+input.addEventListener("keyup",function(event){
+
+  let eneteredvalue = event.target.value.toUpperCase();
+
+  for(let i=0 ; i <pList.length; i++){
+
+    if(pList[i].textContent.toUpperCase().indexOf(eneteredvalue)<0){
+
+    pList[i].style.display = "none";
+  }else{
+
+    pList[i].style.display = "block";
+    console.log(pList);
+  }
+  
+  }
+})
+
+</script>
